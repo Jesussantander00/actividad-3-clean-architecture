@@ -20,6 +20,29 @@ Este proyecto implementa un CRUD básico aplicando el patrón de **Arquitectura 
 
 El proyecto sigue la estructura de **Clean Architecture**, dividida en capas:
 
+---
+
+## 🧪 Pruebas Unitarias (1.2)
+
+Se implementaron pruebas en `ItemServiceTest.java` usando **JUnit 4**, con metodología **AAA**:
+
+- `testCreateAndReadItem()`
+- `testUpdateItem()`
+- `testDeleteItem()`
+- `testReadAllItems()`
+
+> ✅ Todas las pruebas pasaron correctamente con `mvn test`.
+
+---
+
+## 💻 Instrucciones para ejecutar
+
+1. Clonar el repositorio:
+   ```bash
+   git clone https://github.com/Jesussantander00/actividad-3-clean-architecture.git
+   cd actividad-3-clean-architecture/mi-app
+
+
 
 
 
