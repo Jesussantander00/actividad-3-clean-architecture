@@ -1,31 +1,23 @@
 # Actividad 3 - Clean Architecture y Pruebas Unitarias
 
-Este proyecto implementa un CRUD básico con Clean Architecture usando Java y Maven.  
-Se incluyen pruebas unitarias con JUnit 4 para validar cada operación.
+Este proyecto implementa un CRUD básico aplicando el patrón de **Arquitectura Limpia** con Java y Maven. Se incluyen pruebas unitarias con JUnit 4 para validar cada operación utilizando la metodología AAA (Arrange – Act – Assert).
 
-## ✨ Funcionalidades
+---
 
-- Crear un item
-- Leer un item por ID
-- Leer todos los items
-- Actualizar un item
-- Eliminar un item
+## ✨ Funcionalidades Implementadas (1.1)
 
-## 🧱 Arquitectura
+- ✅ Crear un item
+- ✅ Consultar item por ID
+- ✅ Consultar todos los items
+- ✅ Actualizar item
+- ✅ Eliminar item
 
-El proyecto sigue el patrón de **Arquitectura Limpia**, con las siguientes capas:
+Cada funcionalidad está desarrollada siguiendo los principios de diseño limpio: **bajo acoplamiento**, **alta cohesión**, y **separación de responsabilidades**. La lógica del negocio está totalmente desacoplada de la infraestructura.
 
-- `domain`: Contiene las entidades del negocio (`Item`)
-- `usecase`: Contiene la lógica de negocio (`ItemService`)
-- `test`: Pruebas unitarias con JUnit (`ItemServiceTest`)
+---
 
-## ⚙️ Tecnologías
+## 🧱 Arquitectura del Proyecto
 
-- Java 17
-- Maven
-- JUnit 4
+La solución está organizada según los principios de Clean Architecture:
 
-## 🧪 Ejecutar Pruebas
 
-```bash
-mvn test
