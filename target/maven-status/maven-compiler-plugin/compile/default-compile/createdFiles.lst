@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-com\mycompany\actividad4\Actividad4.class
-=======
-com\jesusdaniel\App.class
 com\jesusdaniel\domain\Item.class
+com\jesusdaniel\App.class
 com\jesusdaniel\usecase\ItemService.class
->>>>>>> 6f86380cc8b32bc79723ae32f229294c0dee40eb
+com\mycompany\actividad4\Actividad4.class
