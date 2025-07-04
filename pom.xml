@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -19,18 +20,82 @@
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
       <version>8.0.33</version>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+                             http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.jesusdaniel</groupId>
+  <artifactId>mi-app</artifactId>
+  <version>1.0-SNAPSHOT</version>
+
+  <name>mi-app</name>
+  <url>http://www.example.com</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.release>17</maven.compiler.release>
+  </properties>
+
+  <dependencies>
+    <!-- Dependencias de JUnit 5 (puedes eliminarlas si no las usas) -->
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-api</artifactId>
+      <version>5.11.0</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-params</artifactId>
+      <version>5.11.0</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- ✅ Dependencia de JUnit 4 (la que necesitas para @Test, @Before, Assert, etc.) -->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.13.2</version>
+      <scope>test</scope>
+>>>>>>> 6f86380cc8b32bc79723ae32f229294c0dee40eb
     </dependency>
   </dependencies>
 
   <build>
     <plugins>
+<<<<<<< HEAD
       <!-- Plugin para ejecutar la app con mvn exec:java -->
+=======
+      <!-- Plugin para ejecutar la app con 'mvn exec:java' -->
+>>>>>>> 6f86380cc8b32bc79723ae32f229294c0dee40eb
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>exec-maven-plugin</artifactId>
         <version>3.1.0</version>
         <configuration>
+<<<<<<< HEAD
           <mainClass>com.mycompany.actividad4.Actividad4</mainClass>
+=======
+          <mainClass>com.jesusdaniel.App</mainClass>
+        </configuration>
+      </plugin>
+
+      <!-- Plugin para empaquetar el JAR con la clase main -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>3.4.2</version>
+        <configuration>
+          <archive>
+            <manifest>
+              <mainClass>com.jesusdaniel.App</mainClass>
+            </manifest>
+          </archive>
+>>>>>>> 6f86380cc8b32bc79723ae32f229294c0dee40eb
         </configuration>
       </plugin>
     </plugins>
