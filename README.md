@@ -36,7 +36,7 @@ Se implementaron pruebas en `ItemServiceTest.java` usando **JUnit 4**, con metod
 ---
 
 ## 💻 Instrucciones para ejecutar
-
+"Actualizado el 4 de julio de 2025"
 1. Clonar el repositorio:
    ```bash
    git clone https://github.com/Jesussantander00/actividad-3-clean-architecture.git
