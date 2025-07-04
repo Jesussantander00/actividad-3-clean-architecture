@@ -1,1 +1,26 @@
-/target
+# Ignora la carpeta de compilación de Maven
+/target/
+
+# Configuración de NetBeans o IntelliJ IDEA
+.nb-gradle/
+nbproject/private/
+.idea/
+*.iml
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de logs
+*.log
+
+# Archivos de backup
+*.bak
+*.swp
+
+# Archivos de sistema de Windows
+ehthumbs.db
+desktop.ini
+
+# Archivos generados por test
+surefire-reports/
