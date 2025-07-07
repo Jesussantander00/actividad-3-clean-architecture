@@ -1,4 +1,6 @@
 com\jesusdaniel\domain\Item.class
+com\jesusdaniel\config\ConexionMySQL.class
+com\jesusdaniel\config\TestConexion.class
 com\jesusdaniel\App.class
 com\jesusdaniel\usecase\ItemService.class
 com\mycompany\actividad4\Actividad4.class
