@@ -1,14 +1,30 @@
 package com.jesusdaniel.config;
 
-
-import com.jesusdaniel.config.ConexionMySQL;
 import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
 
 public class TestConexion {
     public static void main(String[] args) {
         try (Connection conn = ConexionMySQL.getConnection()) {
             if (conn != null) {
                 System.out.println("✅ Conexión exitosa a la base de datos.");
+                String sql = "SELECT * FROM clientes";
+
+                try (Statement stmt = conn.createStatement();
+                     ResultSet rs = stmt.executeQuery(sql)) {
+
+                    System.out.println("📋 Registros de la tabla clientes:");
+                    while (rs.next()) {
+                        int id = rs.getInt("id");
+                        String nombre = rs.getString("nombre");
+                        String correo = rs.getString("correo");
+                        String telefono = rs.getString("telefono");
+                        String direccion = rs.getString("direccion");
+
+                        System.out.println(id + " | " + nombre + " | " + correo + " | " + telefono + " | " + direccion);
+                    }
+                }
             } else {
                 System.out.println("❌ No se pudo establecer la conexión.");
             }
